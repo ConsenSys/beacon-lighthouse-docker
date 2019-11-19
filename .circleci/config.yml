@@ -9,7 +9,7 @@ jobs:
      - run:  echo "$DOCKER_PASS" | docker login --username $DOCKER_USER --password-stdin
 
      # build the application image
-     - run: docker build -t ConsenSys/lighthouse:$CIRCLE_BRANCH .
+     - run: docker build -t consensys/lighthouse:$CIRCLE_BRANCH .
 
      # deploy the image
      - run: docker push consensys/lighthouse:$CIRCLE_BRANCH
