@@ -24,6 +24,8 @@ COPY --from=builder /tmp/lighthouse/target/release/account_manager /
 
 COPY readiness_probe.sh /
 
+EXPOSE 5051
 EXPOSE 5052
+EXPOSE 5053
 ENTRYPOINT [ "/lighthouse" ]
 CMD [ "" ]
