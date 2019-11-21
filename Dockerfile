@@ -11,7 +11,7 @@ USER 1001
 # TODO Switch to fixed tag
 RUN git clone https://github.com/sigp/lighthouse.git && \
 	cd lighthouse && \
-	git checkout b7a0feb7253965b1d5e622b6247736ca29e1a254 && \
+	git checkout 24e941d175a7455209c140157bf8d5d588c87ba1 && \
 	make
 
 FROM debian:10-slim

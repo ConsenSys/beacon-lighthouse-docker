@@ -6,7 +6,7 @@ Upstream repository: https://github.com/sigp/lighthouse
 
 ## Version
 
-Current version is fixed at https://github.com/sigp/lighthouse/commit/b7a0feb7253965b1d5e622b6247736ca29e1a254
+Current version is fixed at https://github.com/sigp/lighthouse/commit/24e941d175a7455209c140157bf8d5d588c87ba1
 
 ## Docker-fu
 
