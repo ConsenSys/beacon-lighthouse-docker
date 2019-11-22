@@ -20,7 +20,6 @@ RUN apt-get update && apt-get -y install \
 	libssl1.1 jq curl
 
 COPY --from=builder /tmp/lighthouse/target/release/lighthouse /
-COPY --from=builder /tmp/lighthouse/target/release/account_manager /
 
 COPY readiness_probe.sh /
 
