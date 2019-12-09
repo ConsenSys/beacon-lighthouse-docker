@@ -2,7 +2,7 @@
 FROM sigp/lighthouse:latest as builder
 MAINTAINER Sylvain Laurent <sylvain.laurent@consensys.net>
 LABEL version="0.1"
-LABEL description="Ethereum 2 client, beacon and validator node"
+LABEL description="Ethereum 2 lighthouse client, beacon and validator node"
 
 FROM debian:10-slim
 
