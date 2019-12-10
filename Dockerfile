@@ -1,4 +1,4 @@
-FROM sigp/lighthouse@@sha256:997da79c4ffa94be538048aa77d65f5c1ba7783f10b5f5f0257ac1dc353bc317 as builder
+FROM sigp/lighthouse@sha256:997da79c4ffa94be538048aa77d65f5c1ba7783f10b5f5f0257ac1dc353bc317 as builder
 MAINTAINER Sylvain Laurent <sylvain.laurent@consensys.net>
 LABEL version="0.1"
 LABEL description="Ethereum 2 lighthouse client, beacon and validator node"
