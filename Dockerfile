@@ -1,4 +1,4 @@
-FROM sigp/lighthouse@sha256:997da79c4ffa94be538048aa77d65f5c1ba7783f10b5f5f0257ac1dc353bc317 as builder
+FROM sigp/lighthouse@sha256:7240c3d40f1a96e1a70154095062c14ee5e4534144c84a03a615ee3e1089370b as builder
 MAINTAINER Sylvain Laurent <sylvain.laurent@consensys.net>
 LABEL version="0.1"
 LABEL description="Ethereum 2 lighthouse client, beacon and validator node"
@@ -8,7 +8,7 @@ FROM debian:10-slim
 RUN apt-get update && apt-get -y install \
 	libssl1.1 jq curl
 
-COPY --from=builder /lighthouse/target/release/lighthouse /
+COPY --from=builder /usr/local/bin/lighthouse /
 
 COPY readiness_probe.sh /
 
