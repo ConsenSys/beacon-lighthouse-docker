@@ -1,4 +1,4 @@
-FROM sigp/lighthouse@sha256:7240c3d40f1a96e1a70154095062c14ee5e4534144c84a03a615ee3e1089370b as builder
+FROM sigp/lighthouse@sha256:7c715aaad6a80f1dfa24c921a14bcdfaf81ffa49829c932f31780bf16133499c as builder
 MAINTAINER Sylvain Laurent <sylvain.laurent@consensys.net>
 LABEL version="0.1"
 LABEL description="Ethereum 2 lighthouse client, beacon and validator node"
@@ -17,4 +17,3 @@ EXPOSE 5052
 EXPOSE 5053
 EXPOSE 9000
 ENTRYPOINT [ "/lighthouse" ]
-CMD [ "" ]

@@ -10,6 +10,14 @@ Upstream repository: https://github.com/sigp/lighthouse
 
 ## How to update the image
 
+ 1. Watch for recent changelog at https://github.com/prysmaticlabs/prysm/releases
+ 2. Watch for latest [branches](https://github.com/sigp/lighthouse/branches/active) and issues associated if any
+ 3. Select the appropriate lighthouse sha256 digest
+  - beacon-chain & validator: https://hub.docker.com/r/sigp/lighthouse/tags
+ 4. Replace digests in the Dockerfile
+
+## How to update the image
+
 Select the appropriate lighthouse sha256 digest and edit the present Dockerfile
 
 ## Version
